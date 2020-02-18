@@ -31,7 +31,7 @@ class UEAUTH(Resource):
         print(CurrentPath+":29   [UDM][INFO]   "+"receive AUSF get mysql infos with imsi("+args['imsi']+")")
         print(CurrentPath+":30   [UDM][INFO]   "+"create engine to connect mysql")
         # 数据库信息
-        engine = create_engine('mysql+pymysql://root:qscguqwe123@localhost:3306/oai_db')
+        engine = create_engine('mysql+pymysql://root:@localhost:3306/oai_db')
         DBSession = sessionmaker(bind=engine)
         # 创建session对象:
         session = DBSession()

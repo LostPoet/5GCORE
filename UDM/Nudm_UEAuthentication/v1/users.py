@@ -9,7 +9,7 @@ import mysql.connector
 
 # 初始化数据库连接:
 # 这里一定要用pymysql连接数据库，mysqlconnector取VARBINARY数据时会进行decode导致报错
-engine = create_engine('mysql+pymysql://root:qscguqwe123@localhost:3306/oai_db',)
+engine = create_engine('mysql+pymysql://root:@localhost:3306/oai_db',)
 
 Base = declarative_base()
 
